@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "preserve",
     "target": "ES2018",
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -15,7 +16,10 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@nuxt/types", "@nuxt/content", "@types/node"]
+    "types": ["@nuxt/types", "@nuxt/content", "@types/node", "unplugin-vue2-script-setup/types"]
+  },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }

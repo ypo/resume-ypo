@@ -34,6 +34,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/composition-api/module',
+    "@nuxtjs/svg",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -42,6 +44,18 @@ export default {
     '@nuxt/content',
   ],
 
+  svg: {
+    vueSvgLoader: {
+        // vue-svg-loader options
+    },
+    svgSpriteLoader: {
+        // svg-sprite-loader options
+    },
+    fileLoader: {
+        // file-loader options
+    }
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
@@ -49,7 +63,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
