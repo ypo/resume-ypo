@@ -12,7 +12,16 @@
           <h2 class="text-h2 font-weight-bold">{{ hello.hi }}</h2>
           <h1 class="text-h1 font-weight-bold">{{ hello.name }}</h1>
         </div>
-        <h3 class="text-h5">{{ hello.description }}</h3>
+        <h3 class="text-h4">{{ hello.description }}</h3>
+      </v-col>
+    </v-row>
+
+    <v-row>
+
+      <v-col>
+
+
+        <Experience class="mt-16"></Experience>
       </v-col>
     </v-row>
 
@@ -20,6 +29,7 @@
 </template>
 <script lang="ts" setup>
 import { ref, useAsync, useContext, onMounted } from '@nuxtjs/composition-api';
+import Experience from '~/components/Experience.vue';
 
 const { $content } = useContext()
 const hello = useAsync(() =>
