@@ -4,7 +4,7 @@
             <v-row>
                 <v-spacer></v-spacer>
                 <v-col cols="12" xl="7">
-                    <h1 class="text-h2">{{ data.title }}</h1>
+                    <h1 class="text-h4 text-lg-h2">{{ data.title }}</h1>
                     <v-timeline :dense="$vuetify.breakpoint.width > 0 && $vuetify.breakpoint.mobile === true">
                         <v-timeline-item v-for="experience in data.experiences" :key="experience.title" small fill-dot>
 
@@ -14,12 +14,14 @@
 
                             <div class="py-4">
 
+                                <div class="text-h5 font-weight-bold blue--text d-lg-none">{{experience.start}}</div>
+
                                 <div>
-                                    <div class="text-h4 font-weight-bold mb-4"> {{ experience.company }}
+                                    <div class="text-h5 text-lg-h4 font-weight-bold mb-4"> {{ experience.company }}
                                     </div>
                                 </div>
 
-                                <h2 class="text-h5 font-weight-light blue--text">
+                                <h2 class="text-h6 text-lg-h5 font-weight-light blue--text">
                                     {{ experience.title }}
                                 </h2>
 

@@ -1,24 +1,24 @@
 <template>
-  <v-container>
+  <v-container fluid>
 
     <v-row></v-row>
     <div class="py-16"></div>
-    <div class="py-16"></div>
+    <div class="py-16 d-none d-lg-flex"></div>
     <v-row>
-      <v-col cols="6"></v-col>
-      <v-col cols="6">
+      <v-col class="d-none d-lg-flex"></v-col>
+      <v-col lg="6" class="ml-4 mr-4">
         <!--<Transition name="fadelnt" appear>-->
         <div class="opacity-animation">
-          <h2 class="text-h2 font-weight-bold">{{ hello.hi }}</h2>
-          <h1 class="text-h1 font-weight-bold">{{ hello.name }}</h1>
+          <h2 class="text-h3 text-lg-h2 font-weight-bold">{{ hello.hi }}</h2>
+          <h1 class="text-h2 text-lg-h1 font-weight-bold">{{ hello.name }}</h1>
         </div>
-        <h3 class="text-h4">{{ hello.description }}</h3>
+        <h3 class="text-h4 font-weight-light">{{ hello.description }}</h3>
       </v-col>
     </v-row>
 
     <v-row>
       <v-col>
-        <Experience class="mt-16"></Experience>
+        <Experience class="mt-10 mt-lg-16"></Experience>
       </v-col>
     </v-row>
 
