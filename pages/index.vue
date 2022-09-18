@@ -17,19 +17,25 @@
     </v-row>
 
     <v-row>
-
       <v-col>
-
-
         <Experience class="mt-16"></Experience>
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col>
+        <Education></Education>
+      </v-col>
+    </v-row>
+
+
 
   </v-container>
 </template>
 <script lang="ts" setup>
 import { ref, useAsync, useContext, onMounted } from '@nuxtjs/composition-api';
 import Experience from '~/components/Experience.vue';
+import Education from '~/components/Education.vue';
 
 const { $content } = useContext()
 const hello = useAsync(() =>
