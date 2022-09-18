@@ -1,10 +1,10 @@
 <template>
     <v-sheet v-if="data != undefined" color="transparent">
         <v-container>
+            <MainTitle>{{ data.title }}</MainTitle>
             <v-row>
                 <v-spacer></v-spacer>
                 <v-col cols="12" xl="7">
-                    <h1 class="text-h4 text-lg-h2">{{ data.title }}</h1>
                     <v-timeline :dense="$vuetify.breakpoint.width > 0 && $vuetify.breakpoint.mobile === true">
                         <v-timeline-item v-for="experience in data.experiences" :key="experience.title" small fill-dot>
 
