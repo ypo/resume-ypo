@@ -34,7 +34,11 @@
       </v-col>
     </v-row>
 
-
+    <v-row>
+      <v-col>
+        <Languages></Languages>
+      </v-col>
+    </v-row>
 
   </v-container>
 </template>
@@ -43,6 +47,7 @@ import { ref, useAsync, useContext, onMounted } from '@nuxtjs/composition-api';
 import Experience from '~/components/Experience.vue';
 import Education from '~/components/Education.vue';
 import Skill from '~/components/Skill.vue';
+import Languages from '~/components/Languages.vue';
 
 const { $content } = useContext()
 const hello = useAsync(() =>
