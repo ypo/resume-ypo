@@ -6,12 +6,15 @@
                 <span class="text-h5 font-weight-bold blue--text" v-text="experience.start"></span>
             </template>
 
-            <div class="py-4">
+            <div :class="{'py-4': print !== true}">
 
-                <div class="text-h5 font-weight-bold blue--text d-lg-none">{{experience.start}}</div>
+                <div v-if="dense" :class="{'text-h5': print !== true, 'text-h6': print === true}"
+                    class="font-weight-bold blue--text">{{experience.start}}</div>
 
                 <div>
-                    <div class="text-h5 text-lg-h4 font-weight-bold mb-4"> {{ experience.company }}
+                    <div :class="{'text-h6': print, 'text-h5': dense, 'text-4': dense === false, 'mb-4': print !== true}"
+                        class="font-weight-bold "> {{
+                        experience.company }}
                     </div>
                 </div>
 
@@ -19,14 +22,15 @@
                     {{ experience.title }}
                 </h2>
 
-                <div class="text-h6 font-weight-light mb-4 grey--text">
+                <div :class="{'text-h6': print !== true, 'mb-4': print !== true}" class="font-weight-light grey--text">
                     {{ experience.location }}
                 </div>
 
                 <div class="text-subtitle-1" v-html="experience.description">
                 </div>
 
-                <a class="text-subtitle-1" :href="experience.link" target="_blank">{{ experience.link }}
+                <a class="text-subtitle-1" style="cursor: pointer" :href="experience.link" target="_blank">{{
+                experience.link }}
                 </a>
             </div>
 
@@ -35,6 +39,6 @@
 </template>
 <script lang="ts" setup>
 
-defineProps<{ experiences: any, dense: boolean }>()
+defineProps<{ experiences: any, dense: boolean, print: boolean }>()
 
 </script>

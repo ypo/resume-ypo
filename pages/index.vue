@@ -19,46 +19,37 @@
       </v-col>
     </v-row>
 
-
-    <v-row>
-      <v-col>
-        <Pdf></Pdf>
-      </v-col>
-    </v-row>
-
-
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Experience class="mt-10 mt-lg-16"></Experience>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Education></Education>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Skill></Skill>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Languages></Languages>
       </v-col>
     </v-row>
 
-
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Additional></Additional>
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="no-break">
       <v-col>
         <Contact></Contact>
       </v-col>
@@ -74,7 +65,6 @@ import Skill from '~/components/Skill.vue';
 import Languages from '~/components/Languages.vue';
 import Additional from '~/components/Additional.vue';
 import Contact from '~/components/Contact.vue';
-import Pdf from '~/components/Pdf.vue';
 
 const { $content } = useContext()
 const hello = useAsync(() =>
@@ -86,6 +76,13 @@ onMounted(() => { started.value = true })
 
 </script>
 <style scoped>
+@media print {
+  .no-break {
+    break-inside: avoid;
+  }
+}
+
+
 .opacity-animation {
   animation-name: opacity;
   animation-delay: 250ms;
