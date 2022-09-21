@@ -5,7 +5,7 @@
             <v-row class="ml-xl-16 mr-xl-16" justify="center">
                 <v-col v-for="additional in data.additionals" :key="additional.title" cols="12">
 
-                    <v-list-item>
+                    <v-list-item :dense="print">
                         <v-list-item-content>
                             <div class="text-h6 font-weight-bold">
 
@@ -32,5 +32,6 @@ const { $content } = useContext()
 const data = useAsync(() =>
     $content("/en/additional").fetch<any>()
 );
+defineProps<{ print?: boolean }>()
 
 </script>

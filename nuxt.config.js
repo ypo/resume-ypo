@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - resume-ypo',
-    title: 'resume-ypo',
+    titleTemplate: '%s - CV',
+    title: 'Yannick Poirier',
     htmlAttrs: {
       lang: 'en',
     },
@@ -21,7 +21,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '@/plugins/vue-qrcode',  mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -42,7 +42,26 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-seo',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://www.yannickpoirier.fr',
+  },
+
+  seo: {
+    // My custom configuration
+    baseUrl: 'https://www.yannickpoirier.fr',
+    name: 'Yannick Poirier',
+    title: 'CV',
+    templateTitle: '%name% - %title%',
+    description: 'Research and Developement software engineer, passionate about new technologies that are changing the world',
+    canonical: 'auto',
+    isForcedTrailingSlash: false,
+    keywords: ['software', 'rust', 'c++', 'engineer'],
+    author: 'Yannick Poirier'
+  },
 
   svg: {
     vueSvgLoader: {

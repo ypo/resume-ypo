@@ -1,6 +1,7 @@
 <template>
     <v-sheet v-if="data != undefined" color="transparent">
-        <v-row>
+        <div class="font-weight-bold">{{ data.title }}</div>
+        <v-row dense>
             <v-col v-for="language in data.languages" :key="language.name" cols="12">
 
                 <v-list-item>

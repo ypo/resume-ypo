@@ -14,7 +14,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="true" app>
+    <v-footer :absolute="true" app class="d-print-none">
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>

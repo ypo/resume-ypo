@@ -8,7 +8,7 @@
 
             <div :class="{'py-4': print !== true}">
 
-                <div v-if="dense" :class="{'text-h5': print !== true, 'text-h6': print === true}"
+                <div v-if="dense" :class="{'text-h5': print !== true, 'body-1': print === true}"
                     class="font-weight-bold blue--text">{{experience.start}}</div>
 
                 <div>
@@ -39,6 +39,6 @@
 </template>
 <script lang="ts" setup>
 
-defineProps<{ experiences: any, dense: boolean, print: boolean }>()
+defineProps<{ experiences: any, dense: boolean, print?: boolean }>()
 
 </script>
