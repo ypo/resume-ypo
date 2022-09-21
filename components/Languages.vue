@@ -4,7 +4,7 @@
             <MainTitle>{{ data.title }}</MainTitle>
 
             <v-row class="ml-xl-16 mr-xl-16" justify="center">
-                <v-col v-for="language in data.languages" :key="language.name" lg="2">
+                <v-col v-for="language in data.languages" :key="language.name" lg="3">
 
                     <v-list-item>
                         <v-list-item-content>

@@ -19,6 +19,14 @@
       </v-col>
     </v-row>
 
+
+    <v-row>
+      <v-col>
+        <Pdf></Pdf>
+      </v-col>
+    </v-row>
+
+
     <v-row>
       <v-col>
         <Experience class="mt-10 mt-lg-16"></Experience>
@@ -43,6 +51,7 @@
       </v-col>
     </v-row>
 
+
     <v-row>
       <v-col>
         <Additional></Additional>
@@ -65,6 +74,7 @@ import Skill from '~/components/Skill.vue';
 import Languages from '~/components/Languages.vue';
 import Additional from '~/components/Additional.vue';
 import Contact from '~/components/Contact.vue';
+import Pdf from '~/components/Pdf.vue';
 
 const { $content } = useContext()
 const hello = useAsync(() =>
