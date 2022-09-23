@@ -45,7 +45,8 @@
 
     </v-container>
 </template>
-<script lang="ts" setup>
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
 import Experience from '~/components/Experience.vue';
 import Education from '~/components/Education.vue';
 import Skill from '~/components/Skill.vue';
@@ -54,6 +55,18 @@ import Additional from '~/components/Additional.vue';
 import Contact from '~/components/Contact.vue';
 import Intro from '~/components/Intro.vue';
 
+export default defineComponent({
+    components: {
+        Experience,
+        Education,
+        Skill,
+        PdfLanguages,
+        Additional,
+        Contact,
+        Intro
+    },
+    layout: 'pdf'
+})
 </script>
 <style scoped>
 @media print {

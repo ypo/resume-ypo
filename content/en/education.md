@@ -7,7 +7,7 @@ educations:
         link: https://www.eseo.fr
         date: 2006 - 2010
         logo: /eseo.png
-        description: Electronics and computer engineering school. Specilisation in <b>Embedded Systems and Automation</b>. Software engineering, Real-time kernel programming, electric actuators and linear process control.
+        description: Electronics and computer engineering school. Specialization in <b>Embedded Systems and Automation</b>. Software engineering, Real-time kernel programming, electric actuators and linear process control.
 
     -   school: University of Plymouth
         degree: Master of Science in Robotics
@@ -15,7 +15,7 @@ educations:
         link: https://www.plymouth.ac.uk/courses/postgraduate/msc-robotics
         date: 2008 - 2009
         logo: /plymouth.svg
-        description:  Research-intensive university providing a deep theoretical and practical knowledge of <b>interactive and intelligent robotics</b>. Artificial life and intelligence, adaptive behaviour, information visualisation, neural computation and dynamic systems.
+        description:  Research-intensive university providing a deep theoretical and practical knowledge of <b>interactive and intelligent robotics</b>. Artificial life and intelligence, adaptive behavior, information visualization, neural computation and dynamic systems.
 
     -   school: École Supérieure d’Électronique de l’Ouest
         degree: Higher School Preparatory Classes

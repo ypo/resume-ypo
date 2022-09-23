@@ -29,7 +29,6 @@
                                 </v-avatar>
                             </v-list-item-avatar>
 
-
                             <div class="text-h4 font-weight-bold"
                                 style="overflow: unset !important; white-space: unset">
                                 {{ hello.name }}
@@ -47,10 +46,6 @@
                 <v-col></v-col>
 
             </v-row>
-
-
-
-
         </div>
     </div>
 </template>

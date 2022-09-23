@@ -48,6 +48,9 @@ export default {
 
   sitemap: {
     hostname: 'https://www.yannickpoirier.fr',
+   filter ({ routes }) {
+      return routes.filter(route => route.path !== '/pdf')
+    }
   },
 
   seo: {

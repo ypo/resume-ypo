@@ -13,11 +13,11 @@ experiences:
         title: Software Manager
         link: https://www.cairn.lu
         location: Luxembourg, Luxembourg
-        description: Imagining the <b>future of the privacy</b> by creating a platform permetting to store any personal and private information in a secure way using an innovative zero-knowledge and end-to-end encrypted solution.
+        description: Imagining the <b>future of the privacy</b> by creating a platform permitting to store any personal and private information in a secure way using an innovative zero-knowledge and end-to-end encrypted solution.
 
     -   start: 2017 - 2021
         company: INVERTO
-        title: HTS-DBS, High Thoughput Satellite Data Broadcast System
+        title: HTS-DBS, High Throughput Satellite Data Broadcast System
         link: https://artes.esa.int/projects/htsdbs
         location: Gonderange, Luxembourg
         description: <b>ESA project</b> realized in collaboration with SES and University of Luxembourg. Responsible for designing the architecture and realize the implementation of a CDN for <b>Edge caching over Satellite</b>. The main task includes the implementation of a high performance and reliable unidirectional file transfer protocol exploiting broadcast capabilities of satellites.
@@ -34,7 +34,7 @@ experiences:
         title: WebKit for Smart TV
         link: https://www.digitaltvnews.net/?p=10566
         location: Wecker, Luxembourg
-        description: Developement of <b>Hybrid broadcast broadband TV</b> (HbbTV) web engine based on <b>WebKit</b> for Set-Top-Box. Implementation of HTML5 video player, DRM and Smart TV portals. Optimisation of image decoders for sh4 processor. Developement of linux graphics driver for ST40 chipset to accelerate web browser rendering. 
+        description: Developement of <b>Hybrid broadcast broadband TV</b> (HbbTV) web engine based on <b>WebKit</b> for Set-Top-Box. Implementation of HTML5 video player, DRM and Smart TV portals. Optimization of image decoders for sh4 processor. Development of linux graphics driver for ST40 chipset to accelerate web browser rendering. 
 
 
 ---
