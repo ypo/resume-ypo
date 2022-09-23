@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  resume:
+    container_name: resume-ypo
+    build: .
+    image: ypoi/resume-ypo:latest
+    ports:
+      - 8080:80
