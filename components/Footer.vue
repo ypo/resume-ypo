@@ -4,8 +4,18 @@
 
         <v-card color="#36aeecff" class="flex py-4 text-center white--text" flat tile>
             <v-card-title>
-                <span class="body-2">contact@yannickpoirier.fr</span>
+                <span class="body-2">Contact me at contact@yannickpoirier.fr</span>
                 <v-spacer></v-spacer>
+
+                <v-tooltip bottom>
+                    <template #activator="{ on, attrs }">
+                        <v-btn v-bind="attrs" class="mx-4" dark icon href="/cv-yannick-poirier-en.pdf" target="_blank"
+                            v-on="on">
+                            CV
+                        </v-btn>
+                    </template>
+                    <span>Download</span>
+                </v-tooltip>
 
                 <v-tooltip bottom>
                     <template #activator="{ on, attrs }">
@@ -41,6 +51,8 @@
                     </template>
                     <span>Github</span>
                 </v-tooltip>
+
+
 
             </v-card-title>
 
