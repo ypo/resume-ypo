@@ -3,18 +3,16 @@
         <v-container>
             <MainTitle>{{ data.title }}</MainTitle>
             <v-row>
-
-                <v-spacer></v-spacer>
-                <v-col cols="12" xl="7">
-                    <Timeline v-if="print === true" :experiences="data.experiences" :dense="true" :print="print">
-                    </Timeline>
-                    <Timeline v-if="print !== true" class="d-print-none d-none d-lg-block"
-                        :experiences="data.experiences" :dense="false">
-                    </Timeline>
-                    <Timeline v-if="print !== true" class="d-print-none d-lg-none" :experiences="data.experiences"
-                        :dense="true"></Timeline>
+                <v-spacer class="d-none d-lg-flex"></v-spacer>
+                <Timeline v-if="print === true" :experiences="data.experiences" :dense="true" :print="print">
+                </Timeline>
+                <Timeline v-if="print !== true" class="d-print-none d-none d-lg-block" :experiences="data.experiences"
+                    :dense="false">
+                </Timeline>
+                <Timeline v-if="print !== true" class="d-print-none d-lg-none" :experiences="data.experiences"
+                    :dense="true"></Timeline>
                 </v-col>
-                <v-spacer></v-spacer>
+                <v-spacer class="d-none d-lg-flex"></v-spacer>
             </v-row>
         </v-container>
     </v-sheet>
