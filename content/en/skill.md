@@ -5,7 +5,7 @@ skills:
     -   title: Programming languages
         subtitle: RUST, C/C++, OpenCL
         framework: Actix Web, MongoDB, FFMPEG, WebKit, Tensorflow
-        description: Frontend and backend developement for multi-target (Android, Linux, Windows, embedded system). Implementation of drivers for Linux and embedded system. Software optimization. AV encoders, decoders.
+        description: Software developement for multiple targets (Android, Linux, Windows, Embedded Systems, Cloud server)
         logos:
             - rust
             - cpp
@@ -38,6 +38,6 @@ skills:
 
     -   title: Management
         subtitle: Agile software developement
-        framework: Incremental development, continuous delivery, unit and functional testing.
-        description: 
+        framework: Incremental development, continuous delivery.
+        description: Planning software developement, tracking milestones, leading the project team.
 ---

@@ -2,7 +2,6 @@
     <div>
         <div v-if="print !== true">
             <div class="py-16"></div>
-            <div class="py-16 d-none d-lg-flex"></div>
             <v-row>
                 <v-col class="d-none d-lg-flex"></v-col>
                 <v-col lg="6" class="ml-4 mr-4">
