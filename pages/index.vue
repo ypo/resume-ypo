@@ -37,6 +37,8 @@
       </v-col>
     </v-row>
 
+    <div class="mb-10"></div>
+
   </v-container>
 </template>
 <script lang="ts" setup>

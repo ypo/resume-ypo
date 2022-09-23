@@ -27,8 +27,9 @@
                             </v-list-item-title>
 
 
-                            <v-list-item-title class="text-h5 font-weight-light">{{
-                            education.degree }}
+                            <v-list-item-title style="overflow: unset !important; white-space: unset"
+                                class="text-h5 font-weight-light">{{
+                                education.degree }}
                             </v-list-item-title>
                             <v-list-item-subtitle>{{ education.location }}
                             </v-list-item-subtitle>

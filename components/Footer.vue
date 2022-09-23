@@ -4,55 +4,58 @@
 
         <v-card color="#36aeecff" class="flex py-4 text-center white--text" flat tile>
             <v-card-title>
-                <span class="body-2">Contact me at contact@yannickpoirier.fr</span>
+                <v-col cols="12" md="">
+                    <span class="body-2">Contact me at contact@yannickpoirier.fr</span>
+                </v-col>
                 <v-spacer></v-spacer>
+                <v-col cols="12" md="">
+                    <v-tooltip bottom>
+                        <template #activator="{ on, attrs }">
+                            <v-btn v-bind="attrs" class="mx-4" dark icon href="/cv-yannick-poirier-en.pdf"
+                                target="_blank" v-on="on">
+                                CV
+                            </v-btn>
+                        </template>
+                        <span>Download</span>
+                    </v-tooltip>
 
-                <v-tooltip bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-btn v-bind="attrs" class="mx-4" dark icon href="/cv-yannick-poirier-en.pdf" target="_blank"
-                            v-on="on">
-                            CV
-                        </v-btn>
-                    </template>
-                    <span>Download</span>
-                </v-tooltip>
+                    <v-tooltip bottom>
+                        <template #activator="{ on, attrs }">
+                            <v-btn v-bind="attrs" class="mx-4" dark icon href="mailto:contact@yannickpoirier.fr"
+                                v-on="on">
+                                <v-icon size="24px">
+                                    mdi-email
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <span>E-mail</span>
+                    </v-tooltip>
 
-                <v-tooltip bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-btn v-bind="attrs" class="mx-4" dark icon href="mailto:contact@yannickpoirier.fr" v-on="on">
-                            <v-icon size="24px">
-                                mdi-email
-                            </v-icon>
-                        </v-btn>
-                    </template>
-                    <span>E-mail</span>
-                </v-tooltip>
+                    <v-tooltip bottom>
+                        <template #activator="{ on, attrs }">
+                            <v-btn v-bind="attrs" class="mx-4" dark icon
+                                href="https://www.linkedin.com/in/yannick-poirier" target="_blank" v-on="on">
+                                <v-icon size="24px">
+                                    mdi-linkedin
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <span>LinkedIn</span>
+                    </v-tooltip>
 
-                <v-tooltip bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-btn v-bind="attrs" class="mx-4" dark icon href="https://www.linkedin.com/in/yannick-poirier"
-                            target="_blank" v-on="on">
-                            <v-icon size="24px">
-                                mdi-linkedin
-                            </v-icon>
-                        </v-btn>
-                    </template>
-                    <span>LinkedIn</span>
-                </v-tooltip>
+                    <v-tooltip bottom>
+                        <template #activator="{ on, attrs }">
+                            <v-btn v-bind="attrs" class="mx-4" dark icon href="https://github.com/ypo" target="_blank"
+                                v-on="on">
+                                <v-icon size="24px">
+                                    mdi-github
+                                </v-icon>
+                            </v-btn>
+                        </template>
+                        <span>Github</span>
+                    </v-tooltip>
 
-                <v-tooltip bottom>
-                    <template #activator="{ on, attrs }">
-                        <v-btn v-bind="attrs" class="mx-4" dark icon href="https://github.com/ypo" target="_blank"
-                            v-on="on">
-                            <v-icon size="24px">
-                                mdi-github
-                            </v-icon>
-                        </v-btn>
-                    </template>
-                    <span>Github</span>
-                </v-tooltip>
-
-
+                </v-col>
 
             </v-card-title>
 
