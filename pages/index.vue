@@ -1,6 +1,7 @@
 <template>
-  <container fluid>
+  <v-container fluid>
     <div class="d-print-none">
+
       <v-row>
         <v-col>
           <Intro></Intro>
@@ -38,13 +39,15 @@
       </v-row>
 
       <div class="mb-10"></div>
+
     </div>
 
     <div class="d-none d-print-flex">
       <Print></Print>
     </div>
 
-  </container>
+
+  </v-container>
 </template>
 
 <script lang="ts" setup>
@@ -58,6 +61,7 @@ import Print from '~/components/Print.vue';
 </script>
 <style scoped>
 @media print {
+
   @page {
     font-size: 100%;
     size: a4;

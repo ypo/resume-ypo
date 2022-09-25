@@ -27,7 +27,7 @@ experiences:
         title: Low latency video transcoder
         link: https://youtu.be/AM-EmW0dr-A
         location: Wecker, Luxembourg
-        description: Real-time H264/HEVC <b>video transcoder</b> for medical application using hardware accelerated image processing (OpenCL, OpenGL, Intel Quick Sync). Low latency streaming server for <b>WebRTC</b>. Cross-platform video player for mobile and PC implementing high quality image rendering based on <b>GPU</b> acceleration.
+        description: Real-time H264/HEVC <b>video transcoder</b> for medical application using hardware accelerated image processing (OpenCL, OpenGL, Intel Quick Sync, WebRTC). Cross-platform video player for mobile and PC implementing high quality image rendering based on <b>GPU</b> acceleration.
 
     -   start: 2010 - 2016
         company: INVERTO

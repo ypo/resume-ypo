@@ -16,7 +16,7 @@
 </template>
   
 <script lang="ts" setup>
-import BackgroundSvg from "~/assets/background.svg?inline";
+import BackgroundSvg from "~/assets/background2.svg?inline";
 </script>
 <style scoped>
 .bg-position-mobile {

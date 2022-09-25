@@ -32,7 +32,7 @@ await timeout(5000);
         <div style="position: absolute; right: 5px; top: 5px;">Y.P <span class="pageNumber"></span>/<span class="totalPages"></span></div>
     </div>
   `,
-  margin: { bottom: '25px' },
+  margin: { bottom: '20px' },
 })
   await browser.close();
 })();

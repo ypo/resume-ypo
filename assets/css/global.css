@@ -1,0 +1,44 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.text-subtitle-3 {
+    font-size: 0.60rem !important;
+    font-weight: normal;
+    line-height: 1.0rem;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.text-subtitle-4 {
+    font-size: 0.75rem !important;
+    font-weight: normal;
+    line-height: 1.75rem;
+    letter-spacing: 0.009375em !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.text-body-3 {
+    font-size: 0.66rem !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.print-title {
+    height: 5.0em;
+}
+
+.print-subtitle {
+    height: 3.9em;
+}
+
+.text-grey {
+    color: #9e9e9e !important;
+    caret-color: #9e9e9e !important;
+}
+
+@media print {
+    .text-grey {
+        color: #474747 !important;
+        caret-color: #474747 !important;
+    }
+}

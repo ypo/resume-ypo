@@ -2,7 +2,9 @@
     <v-container fluid>
 
         <div style="position:absolute; top:50px; right:50px">
-            <qr-code size=100 error-level="Q" text="https://www.yannickpoirier.fr"></qr-code>
+            <client-only>
+                <qr-code :size="70" error-level="Q" text="https://www.yannickpoirier.fr"></qr-code>
+            </client-only>
         </div>
 
         <v-row class="no-break">
@@ -11,9 +13,9 @@
             </v-col>
         </v-row>
 
-        <v-row class="no-break">
+        <v-row class="no-break" no-gutters>
 
-            <v-col cols="3">
+            <v-col cols="4" class="mt-16">
                 <Contact :print="true"></Contact>
                 <PdfLanguages></PdfLanguages>
             </v-col>

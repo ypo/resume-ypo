@@ -1,36 +1,36 @@
 <template>
 
     <v-timeline-item v-observe-visibility="visibilityChanged" small fill-dot
-        :class="{'opacity-animation': !print, 'paused': !visible}">
+        :class="{'opacity-animation': !print, 'paused': !visible}" style="padding-bottom: 12px" color="blue lighten-2">
 
         <template #opposite>
             <span class="text-h5 font-weight-bold blue--text" v-text="experience.start"></span>
         </template>
 
+
+
         <div :class="{'py-4': print !== true}">
 
-            <div v-if="dense" :class="{'text-h5': print !== true, 'body-1': print === true}"
-                class="font-weight-bold blue--text">{{experience.start}}</div>
+            <div v-if="dense" :class="font.date(print)" class="font-weight-bold blue--text">{{experience.start}}</div>
 
             <div>
-                <div :class="{'text-h6': print, 'text-h5': dense, 'text-4': dense === false, 'mb-4': print !== true}"
-                    class="font-weight-bold "> {{
-                    experience.company }}
+                <div :class="font.title(print, dense)" class="font-weight-bold "> {{
+                experience.company }}
                 </div>
             </div>
 
-            <h2 class="text-h6 text-lg-h5 font-weight-light blue--text">
+            <h2 :class="font.title2(print)" class="text-lg-h5 font-weight-light blue--text">
                 {{ experience.title }}
             </h2>
 
-            <div :class="{'text-h6': print !== true, 'mb-4': print !== true}" class="font-weight-light grey--text">
+            <div :class="font.subtitle(print)" class="font-weight-light text-grey">
                 {{ experience.location }}
             </div>
 
-            <div class="text-subtitle-1" v-html="experience.description">
+            <div :class="font.body(print)" v-html="experience.description">
             </div>
 
-            <a class="text-subtitle-1" style="cursor: pointer" :href="experience.link" target="_blank">{{
+            <a :class="font.body(print)" style="cursor: pointer" :href="experience.link" target="_blank">{{
             experience.link }}
             </a>
         </div>
@@ -39,7 +39,9 @@
 </template>
 <script lang="ts" setup>
 import { ref } from '@nuxtjs/composition-api';
+import { useFont } from '~/composables/useFont';
 defineProps<{ experience: any, print?: boolean, dense?: boolean }>()
+const font = useFont();
 const visible = ref(false)
 function visibilityChanged(isVisible: boolean) {
     if (isVisible === true) {

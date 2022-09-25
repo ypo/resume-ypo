@@ -1,7 +1,7 @@
 <template>
     <v-sheet v-if="data != undefined" color="transparent">
         <v-container>
-            <MainTitle>{{ data.title }}</MainTitle>
+            <MainTitle :print="print">{{ data.title }}</MainTitle>
             <v-row>
                 <v-spacer class="d-none d-lg-flex"></v-spacer>
                 <Timeline v-if="print === true" :experiences="data.experiences" :dense="true" :print="print">

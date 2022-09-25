@@ -19,12 +19,12 @@
         <div v-if="print === true">
 
             <v-row>
-                <v-col cols="6">
+                <v-col cols="8">
 
-                    <v-list color="transparent">
+                    <v-list color="transparent" style="padding:0">
                         <v-list-item>
-                            <v-list-item-avatar size="90">
-                                <v-avatar size="90px" class="justify-center">
+                            <v-list-item-avatar size="85">
+                                <v-avatar size="85px" class="justify-center">
                                     <img alt="Avatar" src="/2361270.jpg">
                                 </v-avatar>
                             </v-list-item-avatar>
@@ -61,7 +61,7 @@ defineProps<{ print?: boolean }>()
 <style scoped>
 .opacity-animation {
     animation-name: opacity;
-    animation-delay: 250ms;
+    animation-delay: 0;
     animation-duration: 2s;
 }
 

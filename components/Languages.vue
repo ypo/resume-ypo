@@ -27,7 +27,7 @@
                                 {{ language.level }}
                             </v-list-item-title>
 
-                            <div class="font-weight-light mb-4 grey--text">{{ language.description}}
+                            <div class="font-weight-light mb-4 text-grey">{{ language.description}}
                             </div>
 
 

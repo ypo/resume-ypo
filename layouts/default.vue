@@ -1,12 +1,16 @@
 <template>
   <v-app>
 
-    <div class="d-lg-none bg-position-mobile">
+    <div class="d-print-none d-lg-none bg-position-mobile masked">
       <BackgroundSvg></BackgroundSvg>
     </div>
 
-    <div class="d-none d-lg-flex bg-position">
-      <BackgroundSvg></BackgroundSvg>
+    <div class="d-print-flex d-none bg-position-mobile">
+      <BackgroundSvg2></BackgroundSvg2>
+    </div>
+
+    <div class="d-print-none d-none d-lg-flex bg-position masked">
+      <BackgroundSvg> </BackgroundSvg>
     </div>
 
     <div class="d-print-none d-none d-lg-flex  an-position masked">
@@ -20,9 +24,7 @@
     </div>
 
     <v-main>
-
       <Nuxt />
-
     </v-main>
     <Footer></Footer>
   </v-app>
@@ -30,9 +32,10 @@
 
 <script lang="ts" setup>
 import lottie from 'vue-lottie/src/lottie.vue'
+import { ref } from '@nuxtjs/composition-api';
 import * as animationData from "~/assets/lf20_kfuw1wey.json";
 import BackgroundSvg from "~/assets/background.svg?inline";
-import { ref } from '@nuxtjs/composition-api';
+import BackgroundSvg2 from "~/assets/background2.svg?inline";
 import Footer from '~/components/Footer.vue';
 
 const anim = ref<any>(null);
@@ -40,6 +43,7 @@ function handleAnimation(a: any) {
   a.setSpeed(0.1);
   anim.value = a;
 }
+
 </script>
 <style scoped>
 .bg-position-mobile {
@@ -73,4 +77,4 @@ function handleAnimation(a: any) {
 .masked {
   mask-image: linear-gradient(to bottom right, black -10%, transparent 70%);
 }
-</style>
+</style>  
