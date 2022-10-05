@@ -27,8 +27,8 @@
     </v-sheet>
 </template>
 <script lang="ts" setup>
-import { useFont } from '~/composables/useFont';
 import { useAsync, useContext } from '@nuxtjs/composition-api';
+import { useFont } from '~/composables/useFont';
 const font = useFont();
 const { $content } = useContext()
 const data = useAsync(() =>

@@ -60,7 +60,6 @@ function visibilityChanged(isVisible: boolean) {
 
 .opacity-animation {
     animation-name: bounce;
-    animation-delay: 0;
     animation-duration: 0.5s;
 }
 

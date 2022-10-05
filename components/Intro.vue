@@ -61,7 +61,6 @@ defineProps<{ print?: boolean }>()
 <style scoped>
 .opacity-animation {
     animation-name: opacity;
-    animation-delay: 0;
     animation-duration: 2s;
 }
 

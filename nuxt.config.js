@@ -9,9 +9,7 @@ export default {
       lang: 'en',
     },
     meta: [
-      { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -59,11 +57,17 @@ export default {
     name: 'Yannick Poirier',
     title: 'CV',
     templateTitle: '%name% - %title%',
-    description: 'Research and Developement software engineer, passionate about new technologies that are changing the world',
+    description: 'Research and Development software engineer, passionate about new technologies that are changing the world',
     canonical: 'auto',
     isForcedTrailingSlash: false,
-    keywords: ['software', 'rust', 'c++', 'engineer'],
-    author: 'Yannick Poirier'
+    keywords: ['software', 'rust', 'c++', 'engineer', 'cv'],
+    author: 'Yannick Poirier',
+    lang: 'en',
+    language: 'English',
+    charset: 'utf-8',
+    'openGraph.image': {
+      url: 'https://www.yannickpoirier.fr/2361270.jpg',
+    },
   },
 
   svg: {

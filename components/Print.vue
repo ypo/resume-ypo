@@ -16,7 +16,7 @@
         <v-row class="no-break" no-gutters>
 
             <v-col cols="4" class="mt-16">
-                <Contact :print="true"></Contact>
+                <Contact></Contact>
                 <PdfLanguages></PdfLanguages>
             </v-col>
             <v-col>
@@ -36,14 +36,11 @@
             </v-col>
         </v-row>
 
-
-
         <v-row class="no-break">
             <v-col>
                 <Additional :print="true"></Additional>
             </v-col>
         </v-row>
-
 
     </v-container>
 </template>
