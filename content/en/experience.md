@@ -34,7 +34,7 @@ experiences:
         title: WebKit for Smart TV
         link: https://www.digitaltvnews.net/?p=10566
         location: Wecker, Luxembourg
-        description: Developement of <b>Hybrid broadcast broadband TV</b> (HbbTV) web engine based on <b>WebKit</b> for Set-Top-Box. Implementation of HTML5 video player, DRM and Smart TV portals. Optimization of image decoders for sh4 processor. Development of linux graphics driver for ST40 chipset to accelerate web browser rendering. 
+        description: Development of <b>Hybrid broadcast broadband TV</b> (HbbTV) web engine based on <b>WebKit</b> for Set-Top-Box. Implementation of HTML5 video player, DRM and Smart TV portals. Optimization of image decoders for sh4 processor. Development of linux graphics driver for ST40 chipset to accelerate web browser rendering. 
 
 
 ---
