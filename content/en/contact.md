@@ -2,7 +2,7 @@
 title: PERSONAL INFORMATION
 info:
     -   icon: mdi-email
-        title: contact@yannnickpoirier.fr
+        title: contact@yannickpoirier.fr
         subtitle: Personal
 
     -   icon: mdi-phone
